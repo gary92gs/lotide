@@ -26,6 +26,6 @@ const without = (sourceArr,itemsToRemove) => {
 
 
 const words = ["hello", "world", "lighthouse"];
-const ogWords = words;
+const ogWords = words.slice();
 console.log('without returns: ', without(words, ["lighthouse",'world','hello'])); 
 assertArrayEquals(words,ogWords);
