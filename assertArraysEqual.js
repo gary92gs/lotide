@@ -11,7 +11,7 @@ const eqArrays = (arr1, arr2) => {
 };
 
 const assertArrayEquals = (arr1,arr2) => {
-  ((eqArrays(arr1,arr2)) ? console.log(`👍 Assertion Passed: ${arr1} === ${arr2}`) : console.log(`👎 Assertion Failed: ${arr2} !== ${arr2}`));
+  ((eqArrays(arr1,arr2)) ? console.log(`👍 Assertion Passed: ${arr1} === ${arr2}`) : console.log(`👎 Assertion Failed: ${arr1} !== ${arr2}`));
 };
 
 assertArrayEquals([1, 2, 3], [1, 2, 3]); // => true
