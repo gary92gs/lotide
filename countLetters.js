@@ -4,7 +4,7 @@ const assertEqual = (actual,expected) => {
 
 const countLetters = (sentence) => {
   const letterOccurances = {};
-  for (char of sentence.replaceAll(' ')) {
+  for (const char of sentence.replaceAll(' ')) {
     if (letterOccurances[char]){
       letterOccurances[char] += 1;
     } else {
