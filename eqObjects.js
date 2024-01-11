@@ -21,8 +21,10 @@ const eqObjects = (object1,object2) => {
   for (const key in object1) {
     if (object1[key] !== object2[key]) {
       //check if object properties are unequal because they are arrays, before returning false
-      if (eqArrays(object1[key],object2[key])){
-        continue;
+      if (Array.isArray(object1[key]) && Array.isArray(object2[key])){
+        if (eqArrays(object1[key],object2[key])){
+          continue;
+        }
       }
         return false;
     }
