@@ -20,9 +20,9 @@ const ratings = {
   "Akelarre":  { stars: 3 }
 }
 
-result1 = findKey(ratings, x => x.stars === 2);
-result2 = findKey(ratings, item => item.stars === 4);
-result3 = findKey(ratings, item => item.stars === 3);
+const result1 = findKey(ratings, x => x.stars === 2);
+const result2 = findKey(ratings, item => item.stars === 4);
+const result3 = findKey(ratings, item => item.stars === 3);
 
 assertEqual(result1,'noma');
 assertEqual(result2, undefined);
