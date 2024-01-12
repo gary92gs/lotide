@@ -16,7 +16,7 @@ const assertArrayEquals = (arr1,arr2) => {
 
 const map = (array,callback) => {
   const results = [];
-  for (element of array) {
+  for (const element of array) {
     results.push(callback(element));
   }
   return results;
@@ -26,9 +26,9 @@ const map = (array,callback) => {
 const words = ["ground", "control", "to", "major", "tom"];
 const words2 = ["talk","to","me","goose"];
 const words3 = ["say","hello","to","my","little","friend"];
-results = map(words, word => word[0]);
-results2 = map(words2, word => word[0]);
-results3 = map(words3, word => word[0]);
+const results = map(words, word => word[0]);
+const results2 = map(words2, word => word[0]);
+const results3 = map(words3, word => word[0]);
 
 assertArrayEquals(results,['g','c','t','m','t']);
 assertArrayEquals(results2,['t','t','m','g']);
