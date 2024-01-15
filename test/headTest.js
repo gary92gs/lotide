@@ -9,6 +9,6 @@ describe('Tests for head.js', () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
   it('should return "5" for ["5"]', () => {
-    assert.strictEqual(head([5]),'5');
+    assert.strictEqual(head(['5']),'5');
   })
 });
