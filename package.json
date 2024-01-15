@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gary92gs/lotide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gary92gs/lotide/issues"
+  },
+  "homepage": "https://github.com/gary92gs/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.1",
+    "mocha": "^9.2.2"
+  }
+}

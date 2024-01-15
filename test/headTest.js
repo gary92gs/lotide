@@ -1,8 +1,14 @@
-const assertEqual = require('../assertEqual.js');
-const head = require('../head.js');
+// const assertEqual = require('../assertEqual.js');
+// const head = require('../head.js');
 
-assertEqual(head([5, 6, 7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head(['forty-nine', 'fifty', 'fifty-one', 'fifty-two']), 'fifty');
-assertEqual(head([6]), 5);
-assertEqual(head([]), 1);
+const assert = require('chai').assert; //import assertion library
+const head = require('../head'); //insert file to test against
+
+describe('Tests for head.js', () => {
+  it('should return 1 for the array [1,2,3]', () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+  it('should return "5" for ["5"]', () => {
+    assert.strictEqual(head([5]),'5');
+  })
+});
