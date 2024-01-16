@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "0.1.0",
-  "description": "",
+  "name": "@gary92.gs/lotide",
+  "version": "1.0.0",
+  "description": "practice publishing npm packages",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/gary92gs/lotide.git"
   },
-  "author": "",
+  "author": "Garrett Stewart",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gary92gs/lotide/issues"
