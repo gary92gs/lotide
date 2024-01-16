@@ -1,19 +1,3 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArrayEquals = (arr1,arr2) => {
-  ((eqArrays(arr1,arr2)) ? console.log(`👍 Assertion Passed: ${arr1} === ${arr2}`) : console.log(`👎 Assertion Failed: ${arr1} !== ${arr2}`));
-};
-
 const without = (sourceArr,itemsToRemove) => {
   newArr = [];
   for (const word of sourceArr) {
@@ -24,8 +8,15 @@ const without = (sourceArr,itemsToRemove) => {
   return newArr;
 }
 
+module.exports = without;
 
-const words = ["hello", "world", "lighthouse"];
-const ogWords = words.slice();
-console.log('without returns: ', without(words, ["lighthouse",'world','hello'])); 
-assertArrayEquals(words,ogWords);
+
+
+
+
+
+// //TEST CASES BELOW:
+// const words = ["hello", "world", "lighthouse"];
+// const ogWords = words.slice();//create separate copy (ie. different array memory address)
+// console.log('without returns: ', without(words, ["lighthouse",'world','hello'])); 
+// assertArrayEquals(words,ogWords);

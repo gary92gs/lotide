@@ -1,7 +1,3 @@
-const assertEqual = (actual,expected) => {
-  ((actual === expected) ? console.log(`👍 Assertion Passed: ${actual} === ${expected}`) : console.log(`👎 Assertion Failed: ${actual} !== ${expected}`));
-};
-
 const findKey = (object,callback) => {
   for (const item in object) {
     if (callback(object[item])){
@@ -11,19 +7,23 @@ const findKey = (object,callback) => {
   return undefined;
 }
 
-const ratings = {
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}
+module.exports = findKey;
 
-const result1 = findKey(ratings, x => x.stars === 2);
-const result2 = findKey(ratings, item => item.stars === 4);
-const result3 = findKey(ratings, item => item.stars === 3);
+//TEST CASES BELOW:
 
-assertEqual(result1,'noma');
-assertEqual(result2, undefined);
-assertEqual(result3,'Akaleri');
+// const ratings = {
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }
+
+// const result1 = findKey(ratings, x => x.stars === 2);
+// const result2 = findKey(ratings, item => item.stars === 4);
+// const result3 = findKey(ratings, item => item.stars === 3);
+
+// assertEqual(result1,'noma');
+// assertEqual(result2, undefined);
+// assertEqual(result3,'Akaleri');
